@@ -78,10 +78,10 @@ export class GoogleDriveFileBrowser extends Widget {
 
   /**
    * Whether the widget has been disposed.
-   */
   get isDisposed(): boolean {
     return this._isDisposed;
   }
+   */
 
   /**
    * Dispose of the resource held by the widget.
@@ -90,7 +90,7 @@ export class GoogleDriveFileBrowser extends Widget {
     if (this.isDisposed) {
       return;
     }
-    this._isDisposed = true;
+  //  this._isDisposed = true;
     this._loginScreen.dispose();
     this._browser.dispose();
     super.dispose();
@@ -146,7 +146,7 @@ export class GoogleDriveFileBrowser extends Widget {
     });
   }
 
-  private _isDisposed = false;
+  //private _isDisposed = false;
   private _browser: FileBrowser;
   private _loginScreen: GoogleDriveLogin;
   private _logoutButton: ToolbarButton;

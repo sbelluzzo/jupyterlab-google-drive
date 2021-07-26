@@ -100,7 +100,7 @@ type PaginatedResponse =
 /**
  * Alias for directory IFileType.
  */
-const directoryFileType = DocumentRegistry.defaultDirectoryFileType;
+const directoryFileType = DocumentRegistry.getDefaultDirectoryFileType();
 
 /**
  * The name of the dummy "Shared with me" folder.
